@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact -- Angela's Dance Academy</title>
+      <!-- link for css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- link for font awosemo  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- link for favicon  -->
+      <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+      <style>
+         button {
+            background-color: black;
+            color: white;
+            padding: 13px 30px;
+            font-weight: 600;
+            font-size: 12px;
+            transition-duration: .4s;
+            border: none;
+        
+            cursor: pointer;
+         }
+   
+         button:hover {
+            background-color: rgb(83, 83, 83);
+            color: white;
+            padding: 13px 30px;
+            font-weight: 600;
+            font-size: 12px;
+            transition-duration: .4s;
+            border: none;
+            cursor: pointer;
+         }
+      </style>
+
+   </head>
+   <body>
+      <!-- coding starts here -->
+      <div class="main-body">
+         <div class="header pc center">
+            <div class="logo">
+               <a href="./index.html">
+               <img loading="lazy" src="./images/logo.jpg" alt="..." class="img-fluid">
+               </a>  
+            </div>
+            <div class="adress flex">
+               <div class="loaction1 col1">
+                  <p class="left">12840 Tamiami Trail North Suite 300</p>
+               </div>
+               <div class="loaction2 col1">
+                  <p>Naples, FL, 34110</p>
+               </div>
+               <div class="loaction3 col1">
+                  <p class="right">239.215.2888</p>
+               </div>
+            </div>
+            <div class="menu flex">
+               <div class="underline col1"></div>
+               <div class="main-menu col1">
+                  <ul class="flex">
+                     <li><a href="./index.html">ABOUT</a></li>
+                     <li><a href="./classes.html">CLASSES</a></li>
+                     <li><a href="./gallery.html">GALLERY</a></li>
+                     <li><a href="./schedule.html">SCHEDULE</a></li>
+                     <li><a href="./contact.html" class="active">CONTACT</a></li>
+                  </ul>
+               </div>
+               <div class="underline col1"></div>
+            </div>
+         </div>
+         <div class="header mobile center">
+            <div class="main-menu center">
+               <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="./index.html">ABOUT</a>
+                  <a href="./classes.html">CLASSES</a>
+                  <a href="./gallery.html">GALLERY</a>
+                  <a href="./schedule.html">SCHEDULE</a>
+                  <a href="./contact.html">CONTACT</a>
+               </div>
+               <!-- Use any element to open the sidenav -->
+               <span onclick="openNav()">Menu</span>
+            </div>
+            <div class="logo">
+               <a href="./index.html">
+               <img loading="lazy" src="./images/logo.jpg" alt="..." class="img-fluid">
+               </a>  
+            </div>
+            <div class="adress flex">
+               <div class="loaction1 col1">
+                  <p class="left">12840 Tamiami Trail North Suite 300</p>
+               </div>
+               <div class="loaction2 col1">
+                  <p>Naples, FL, 34110</p>
+               </div>
+               <div class="loaction3 col1">
+                  <p class="right">239.215.2888</p>
+               </div>
+            </div>
+         </div>
+         <div class="contact-form">
+            <div class="contact-img flex">
+               <div class="col1" style="margin-bottom: 40px;"></div>
+               <div class="col1">
+                  <h1>CONTACT</h1>
+                  <div class="center">
+                     <hr>
+                  </div>
+               </div>
+               <div class="col1 underline"></div>
+            </div>
+            <div class="form-map flex">
+               <div class="map center col1">
+                  <p>
+                     <span>
+                     Angela's Dance Academy
+                     </span>
+                     <br>
+                     12840 Tamiami Trail N. Suite 300
+                     <br>
+                     Naples, FL 34110 <br>
+                     (239) 215-2888 <br>
+                     <button onclick="window.location.href='tel:+12392152888'">Call Now</button>
+
+                  </p>
+                  <div class="map-adress">
+                     <iframe
+                        loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.1810548002613!2d-81.80198696955127!3d26.288229965617816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88db1937da84011f%3A0xb520ca78872c755c!2s12840%20Tamiami%20Trail%20N%20Suite%20300%2C%20Naples%2C%20FL%2034110%2C%20USA!5e0!3m2!1sen!2s!4v1683563335525!5m2!1sen!2s"
+                        width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+               </div>
+               <div class="col1 complete-form ">
+                  <label for="name">Name <span>(Required)</span></label>
+                  <div class="named-input flex">
+                     <div class="first-name col1">
+                        <label for="name">First Name</label>
+                        <input type="text" required>
+                     </div>
+                     <div class="second-name col1">
+                        <label for="name">Second Name</label>
+                        <input type="text" required>
+                     </div>
+                  </div>
+                  <div class="Email">
+                     <label for="email">Email Address<span>(Required)</span></label>
+                     <input type="text" required>
+                  </div>
+                  <div class="Phone">
+                     <label for="phone">Phone<span>(Required)</span></label>
+                     <input type="text" required>
+                  </div>
+                  <div class="message">
+                     <label for="massgae">Massages<span>(Required)</span></label>
+                     <textarea required width="100%" cols="50" rows="8"></textarea>
+                  </div>
+                  <div class="btn">
+                     <a href="#">Contact</a>
+                  </div>
+               </div>
+            </div>
+            <div class="outer-underline-before-icons"></div>
+            <div class="icons flex ">
+               <div class="col1"></div>
+               <div class="col1 right">
+                  <a href="https://www.facebook.com/angelas.danceacademy">
+                     <i class="fa-brands fa-facebook-f"></i>
+                     </a>
+                     <a href="https://www.youtube.com/channel/UCAg0ZZa-6O401hTmuKe9kPA">
+                     <i class="fa-brands fa-youtube"></i>
+                     </a>
+                     <a href="https://instagram.com/angelasdanceacademy">
+                     <i class="fa-brands fa-instagram"></i>
+                     </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="js/script.js"></script> 
+   </body>
+</html>
