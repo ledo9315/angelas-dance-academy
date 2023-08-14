@@ -739,6 +739,7 @@ body {
     .contact-form .form-map {
         flex-direction: column;
         display: inline-block;
+        gap: 20px;
     }
 
     .contact-form .named-input {
@@ -829,6 +830,7 @@ body {
 
     .contact-form .form-map {
         flex-direction: column;
+        align-items: center;
     }
     .main-body .next-prev-btn h1 {
         font-size: 18px;
@@ -911,6 +913,10 @@ html {
     }
 }
 
+.form-map {
+    gap: 20px;
+}
+
 
 .schedule-heading {
     font-weight: 500;
@@ -927,6 +933,13 @@ html {
     margin-bottom: 50px;
     max-width: 80%;
   }
+
+@media (max-width: 620px) {
+    .schedule-container {
+        max-width: 100%;
+    }
+}
+
 
   .schedule-table {
     width: 100%;
