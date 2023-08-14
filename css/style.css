@@ -382,6 +382,8 @@ body {
 
 .contact-form .form-map {
     padding: 0px 0px 100px 0px;
+    display: flex;
+    align-items: baseline;
 }
 
 .contact-form .form-map .map p {
@@ -909,33 +911,56 @@ html {
     }
 }
 
-.schedule {
-    margin-top: 70px;
-}
-.schedule h2 {
+
+.schedule-heading {
+    font-weight: 500;
     font-family: var(--secondary-font-family);
-    margin-bottom: 20px;
-    font-weight: normal;
-    font-size: 28px;
-}
-.schedule p {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+.schedule-container {
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    max-width: 80%;
+  }
+
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
     font-family: var(--primary-font-family);
     font-size: 14px;
-    color: var(--mini-secondary-color);
-    margin-bottom: 50px;
-    line-height: 1.5;
-}
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+  }
 
-.schedule p:last-child {
-margin-bottom: 30px;
-}
+
+  .schedule-table th {
+    background-color: rgba(20, 184, 165, 0.8);
+    color: white;
+  }
+
+  .age-group {
+    font-family: var(--primary-font-family);
+    font-size: 14px;
+  }
 
 .more-information {
     font-family: var(--primary-font-family);
     font-size: 14px;
     color: var(--mini-secondary-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     line-height: 1.5;
+    text-align: center;
+
 }
 
 .more-information a {
