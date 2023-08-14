@@ -126,7 +126,6 @@
                      <br>
                      Naples, FL 34110 <br>
                      (239) 215-2888 <br>
-                     <button onclick="window.location.href='tel:+12392152888'">Call Now</button>
 
                   </p>
                   <div class="map-adress">
@@ -136,7 +135,7 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                </div>
-               <div class="col1 complete-form ">
+               <form class="col1 complete-form form" action="submit_form.php" method="POST">
                   <label for="name">Name <span>(Required)</span></label>
                   <div class="named-input flex">
                      <div class="first-name col1">
@@ -145,25 +144,23 @@
                      </div>
                      <div class="second-name col1">
                         <label for="name">Second Name</label>
-                        <input type="text" required>
+                        <input type="text" id="name" name="name" required>
                      </div>
                   </div>
                   <div class="Email">
                      <label for="email">Email Address<span>(Required)</span></label>
-                     <input type="text" required>
+                     <input type="email" id="email" name="email" required>
                   </div>
                   <div class="Phone">
                      <label for="phone">Phone<span>(Required)</span></label>
                      <input type="text" required>
                   </div>
                   <div class="message">
-                     <label for="massgae">Massages<span>(Required)</span></label>
-                     <textarea required width="100%" cols="50" rows="8"></textarea>
+                     <label for="message">Massages<span>(Required)</span></label>
+                     <textarea id="message" name="message" required width="100%" cols="50" rows="8"></textarea>
                   </div>
-                  <div class="btn">
-                     <a href="#">Contact</a>
-                  </div>
-               </div>
+                  <button class="button-submit" type="submit">Contact me</button>
+               </form>
             </div>
             <div class="outer-underline-before-icons"></div>
             <div class="icons flex ">
