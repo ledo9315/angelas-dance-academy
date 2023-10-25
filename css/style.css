@@ -906,89 +906,21 @@ html {
   gap: 20px;
 }
 
-.schedule {
-  text-align: center;
-  color: #2c2c2c;
-  padding-bottom: 50px;
-}
+  .schedule {
+    margin: 0 auto;
+  }
 
-.schedule-heading {
-  font-weight: 500;
-  font-family: var(--secondary-font-family);
-  margin-bottom: 30px;
-  text-align: center;
-}
 
-.schedule-container {
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 50px;
-  max-width: 80%;
+@media (max-width: 460px) {
+  .schedule {
+    position: absolute;
+    left: 0px;
+    right: 0px;
 
-  @media (max-width: 768px) {
-    max-width: 100%;
-    padding: 0px;
+    max-width: 360px;
   }
 }
 
-.schedule-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.schedule-table th,
-.schedule-table td {
-  font-family: var(--primary-font-family);
-  font-size: 14px;
-  padding: 15px;
-  text-align: center;
-  border-bottom: 1px solid #dddddd;
-}
-
-.schedule-table th {
-  background-color: rgba(20, 184, 165, 0.8);
-  color: white;
-}
-
-/* Responsive-Stile für Tablets und größere Bildschirme */
-@media (min-width: 768px) {
-  .mobile-header,
-  .mobile-schedule {
-    display: none;
-  }
-  .schedule-table th,
-  .schedule-table td {
-    padding: 15px;
-  }
-}
-
-/* Responsive-Stile für Smartphones */
-@media (max-width: 767px) {
-  .schedule-table {
-    display: none; /* Die große Tabelle für Desktop ausblenden */
-  }
-
-  .desktop-header {
-    display: none; /* Die Header-Zeile für Desktop ausblenden */
-  }
-
-  .schedule-table tbody {
-    display: block;
-  }
-
-  .schedule-table tr {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .schedule-table td {
-    display: block;
-    text-align: left;
-  }
 
   .mobile-header {
     display: table;
@@ -1015,10 +947,18 @@ html {
     padding: 10px;
   }
 
+
+
   .mobile-schedule td {
+    text-align: center;
+    border: 1px #e6e6e6 solid;
     padding: 15px;
   }
-}
+
+.mobile-schedule td span {
+    font-weight: 700;
+    color: #5c5c5c;
+  }
 
 .age-group {
   font-family: var(--primary-font-family);
@@ -1026,6 +966,7 @@ html {
 }
 
 .more-information {
+  margin-top: 30px;
   font-family: var(--primary-font-family);
   font-size: 14px;
   color: var(--mini-secondary-color);

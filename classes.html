@@ -1,149 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Classes -- Angela's Dance Academy</title>
-      <!-- link for css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- link for font awosemo  -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-         crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <!-- link for favicon  -->
-      <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-   </head>
-   <body>
-      <!-- coding starts here -->
-      <div class="main-body">
-         <div class="header pc center">
-            <div class="logo">
-               <a href="./index.html">
-               <img loading="lazy" src="./images/logo.jpg" alt="..." class="img-fluid">
-               </a>  
-            </div>
-            <div class="adress flex">
-               <div class="loaction1 col1">
-                  <p class="left">12840 Tamiami Trail North Suite 300</p>
-               </div>
-               <div class="loaction2 col1">
-                  <p>Naples, FL, 34110</p>
-               </div>
-               <div class="loaction3 col1">
-                  <p class="right">239.215.2888</p>
-               </div>
-            </div>
-            <div class="menu flex">
-               <div class="underline col1"></div>
-               <div class="main-menu col1">
-                  <ul class="flex">
-                     <li><a href="./index.html">ABOUT</a></li>
-                     <li><a href="./classes.html" class="active">CLASSES</a></li>
-                     <li><a href="./gallery.html">GALLERY</a></li>
-                     <li><a href="./schedule.html">SCHEDULE</a></li>
-                     <li><a href="./contact.html">CONTACT</a></li>
-                  </ul>
-               </div>
-               <div class="underline col1"></div>
-            </div>
-         </div>
-         <div class="header mobile center">
-            <div class="main-menu center">
-               <div id="mySidenav" class="sidenav">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                  <a href="./index.html">ABOUT</a>
-                  <a href="./classes.html">CLASSES</a>
-                  <a href="./gallery.html">GALLERY</a>
-                  <a href="./schedule.html">SCHEDULE</a>
-                  <a href="./contact.html">CONTACT</a>
-               </div>
-               <!-- Use any element to open the sidenav -->
-               <span onclick="openNav()">Menu</span>
-            </div>
-            <div class="logo">
-               <a href="./index.html">
-               <img loading="lazy" src="./images/logo.jpg" alt="..." class="img-fluid">
-               </a>  
-            </div>
-            <div class="adress flex">
-               <div class="loaction1 col1">
-                  <p class="left">12840 Tamiami Trail North Suite 300</p>
-               </div>
-               <div class="loaction2 col1">
-                  <p>Naples, FL, 34110</p>
-               </div>
-               <div class="loaction3 col1">
-                  <p class="right">239.215.2888</p>
-               </div>
-            </div>
-         </div>
-         <div class="classes-section center">
-            <div class="main-heading">
-               <h1>CLASSES</h1>
-            </div>
-            <div class="flex-section flex">
-               <div class="section col1">
-                  <img loading="lazy" src="./images/item1.jpg" alt="..." class="img-fluid">
-                  <h1>Pre-Dance Ages 3 to 5</h1>
-                  <p>Helping preschoolers build a love for dance in a preparatory program that emphasizes learning
-                     classroom skills and having fun.
-                  </p>
-                  <div class="btn">
-                     <a href="#">LEARN MORE</a>
-                  </div>
-               </div>
-               <div class="section col1">
-                  <img src="./images/item2.jpg" alt="..." class="img-fluid">
-                  <h1>Fundamentals Ages 6 to 18</h1>
-                  <p>New students learn the fundamentals of Jazz, Hip Hop, Contemporary and Ballet. In fun,
-                     age-appropriate programs that focus on establishing a strong foundation.
-                  </p>
-                  <div class="btn">
-                     <a href="#">LEARN MORE</a>
-                  </div>
-               </div>
-            </div>
-            <div class="flex-section flex">
-               <div class="section col1">
-                  <img src="./images/item3.jpg" alt="..." class="img-fluid">
-                  <h1>Competition Team</h1>
-                  <p>From late beginner through intermediate and advanced levels, students develop technique and
-                     artistry as they progress through the levels of competitions.
-                  </p>
-                  <div class="btn">
-                     <a href="#">LEARN MORE</a>
-                  </div>
-               </div>
-               <div class="section col1">
-                  <img src="./images/item4.jpg" alt="..." class="img-fluid">
-                  <h1>Learning in Movement</h1>
-                  <p>Through dance, students learn teamwork, focus, and improvisational skills. Dancing awakens new
-                     perceptions in children, which help them learn and think in new ways.
-                  </p>
-                  <div class="btn">
-                     <a href="#">LEARN MORE</a>
-                  </div>
-               </div>
-            </div>
-            <div class="outer-underline-before-icons"></div>
-            <div class="icons flex ">
-               <div class="col1"></div>
-               <div class="col1 right">
-                  <a href="https://www.facebook.com/angelas.danceacademy">
-                     <i class="fa-brands fa-facebook-f"></i>
-                     </a>
-                     <a href="https://www.youtube.com/channel/UCAg0ZZa-6O401hTmuKe9kPA">
-                     <i class="fa-brands fa-youtube"></i>
-                     </a>
-                     <a href="https://instagram.com/angelasdanceacademy">
-                     <i class="fa-brands fa-instagram"></i>
-                     </a>
-               </div>
-            </div>
-         </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes -- Angela's Dance Academy</title>
+    <!-- link for css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- link for font awosemo  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link for favicon  -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- coding starts here -->
+    <div class="main-body">
+      <div class="header pc center">
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              loading="lazy"
+              src="./images/logo.jpg"
+              alt="..."
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="adress flex">
+          <div class="loaction1 col1">
+            <p class="left">12840 Tamiami Trail North Suite 300</p>
+          </div>
+          <div class="loaction2 col1">
+            <p>Naples, FL, 34110</p>
+          </div>
+          <div class="loaction3 col1">
+            <p class="right">239.215.2888</p>
+          </div>
+        </div>
+        <div class="menu flex">
+          <div class="underline col1"></div>
+          <div class="main-menu col1">
+            <ul class="flex">
+              <li><a href="./index.html">ABOUT</a></li>
+              <li><a href="./classes.html" class="active">CLASSES</a></li>
+              <li><a href="./gallery.html">GALLERY</a></li>
+              <li><a href="./schedule.html">SCHEDULE</a></li>
+              <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="underline col1"></div>
+        </div>
       </div>
+      <div class="header mobile center">
+        <div class="main-menu center">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="./index.html">ABOUT</a>
+            <a href="./classes.html">CLASSES</a>
+            <a href="./gallery.html">GALLERY</a>
+            <a href="./schedule.html">SCHEDULE</a>
+            <a href="./contact.html">CONTACT</a>
+          </div>
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()">Menu</span>
+        </div>
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              loading="lazy"
+              src="./images/logo.jpg"
+              alt="..."
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="adress flex">
+          <div class="loaction1 col1">
+            <p class="left">12840 Tamiami Trail North Suite 300</p>
+          </div>
+          <div class="loaction2 col1">
+            <p>Naples, FL, 34110</p>
+          </div>
+          <div class="loaction3 col1">
+            <p class="right">239.215.2888</p>
+          </div>
+        </div>
       </div>
-      <script src="js/script.js"></script> 
-   </body>
+      <div class="classes-section center">
+        <div class="main-heading">
+          <h1>CLASSES</h1>
+        </div>
+        <div class="flex-section flex">
+          <div class="section col1">
+            <img
+              loading="lazy"
+              src="./images/item1.jpg"
+              alt="..."
+              class="img-fluid"
+            />
+            <h1>Pre-Dance Ages 3 to 5</h1>
+            <p>
+              Helping preschoolers develop a love for dance through a
+              preparatory program that emphasizes learning essential classroom
+              skills while having fun.
+            </p>
+            <!--             <div class="btn">
+              <a href="#">LEARN MORE</a>
+            </div> -->
+          </div>
+          <div class="section col1">
+            <img src="./images/item2.jpg" alt="..." class="img-fluid" />
+            <h1>Fundamentals Ages 6 to 18</h1>
+            <p>
+              New students learn the fundamentals of Jazz, Hip Hop, Contemporary
+              and Ballet. In fun, age-appropriate programs that focus on
+              establishing a strong foundation.
+            </p>
+            <!--             <div class="btn">
+              <a href="#">LEARN MORE</a>
+            </div> -->
+          </div>
+        </div>
+        <div class="flex-section flex">
+          <div class="section col1">
+            <img src="./images/item3.jpg" alt="..." class="img-fluid" />
+            <h1>Competition Team</h1>
+            <p>
+              From late beginner through intermediate and advanced levels,
+              students develop technique and artistry as they progress through
+              the levels of competitions.
+            </p>
+            <!--             <div class="btn">
+              <a href="#">LEARN MORE</a>
+            </div> -->
+          </div>
+          <div class="section col1">
+            <img src="./images/item4.jpg" alt="..." class="img-fluid" />
+            <h1>Learning in Movement</h1>
+            <p>
+              Through dance, students learn teamwork, focus, and improvisational
+              skills. Dancing awakens new perceptions in children, which help
+              them learn and think in new ways.
+            </p>
+            <!--             <div class="btn">
+              <a href="#">LEARN MORE</a>
+            </div> -->
+          </div>
+        </div>
+        <div class="outer-underline-before-icons"></div>
+        <div class="icons flex">
+          <div class="col1"></div>
+          <div class="col1 right">
+            <a href="https://www.facebook.com/angelas.danceacademy">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCAg0ZZa-6O401hTmuKe9kPA">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://instagram.com/angelasdanceacademy">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
