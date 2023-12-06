@@ -11,7 +11,7 @@ This website is designed to showcase the exciting world of dance and provide inf
 - **JavaScript**
 
 ## Website
-Visit the website: [www.angelasdanceacademy.com (https://www.angelasdanceacademy.com/)]
+Visit the website: [www.angelasdanceacademy.com(https://www.angelasdanceacademy.com/)]
 
 ---
 
